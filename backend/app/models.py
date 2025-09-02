@@ -35,8 +35,9 @@ class UserUpdateMe(SQLModel):
 
 
 class UpdatePassword(SQLModel):
-    current_password: str = Field(min_length=8, max_length=40)
-    new_password: str = Field(min_length=8, max_length=40)
+    current_passsword: str = Field(min_length=8, max_length=40)
+    # This is the new way of naming the passwords
+    new_passsword: str = Field(min_length=8, max_length=40)
 
 
 # Database model, database table inferred from class name
